@@ -1,10 +1,7 @@
-![](https://i.imgur.com/xG74tOh.png)
 
-# Exercício 01
 
 ## Cadastro de alunos
 
-Neste exercício será necessário criar uma API REST para realização de cadastro de alunos, mas para satisfazer a demanda, será necessário contemplar alguns requisitos e regras obrigatórios.
 
 **Regras da API:**
 
@@ -66,7 +63,7 @@ Abaixo será definida como deverá ser feita a organização do código desta AP
 
 **Autenticação simples - proteção por senha:**
 
-Todas as requisições deverão verificar se a senha está correta através de intermediário (middleware) e a senha correta deverá ser: **cubos123**.
+Todas as requisições deverão verificar se a senha está correta através de intermediário (middleware) e a senha correta deverá ser: **123**.
 Caso a senha não seja informada ou seja informada incorretamente, deverá ser retornado código 401 (Unauthorized - não autorizado) com uma mensagem de erro conforme padrão de retorno acima dizendo que a senha está incorreta.
 
 **Especificações e validações de cada método:**
@@ -109,7 +106,7 @@ Caso não exista aluno para o id informado, deverá ser retornado 404 (Not Found
 
 Caso exista na coleção um objeto de aluno com o id informado pelo parâmetro, o objeto deverá ser removido do array e deverá ser retornado status 200 (Ok) com o objeto removido no corpo (body) da resposta (response).
 
-**EXTRAS!!! (para ser feito caso sobre tempo da aula prática):**
+**EXTRAS!!!**
 
 1. Crie um novo arquivo na camada de dados (**cursos.js**) para guardar e exportar um array de strings dos cursos válidos e adicione às validações do POST uma verificação se o curso informado pelo request é um curso válido deste array de cursos.
 2. Implemente os métodos PUT e PATCH com todas as validações que considerar necessárias de acordo com o que foi aprendido na aula e retornando os status codes corretos seguindo o REST. Pense em fazer de uma forma que as validações possam ser reutilizadas em todos os métodos que fizer sentido.
